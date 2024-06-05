@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+ 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: hsl(30, 54%, 90%);
+      font-size: 16px;
+      font-family: "Outfit", sans-serif;
+    }
+    .item {
+      width: 720px;
+      padding: 40px;
+      background-color: hsl(0, 0%, 100%);
+      margin: 100px auto;
+      border-radius: 20px;
+    }
+    .title {
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      font-size: 40px;
+      margin: 30px 0;
+      color: hsl(24, 5%, 18%);
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .first-ul {
+      background-color: hsl(330, 100%, 98%);
+      padding: 30px;
+      margin: 30px 0;
+      border-radius: 10px;
+    }
+
+    .first-ul p {
+      color: hsl(332, 51%, 32%);
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .first-ul ul {
+      margin-left: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      color: hsl(332, 51%, 32%);
+    }
+
+    .first-ul ul li div {
+      color: hsl(24, 5%, 18%);
+    }
+
+    .second-ul {
+      margin: 30px 0;
+    }
+
+    .second-ul p {
+      color: hsl(14, 45%, 36%);
+      font-size: 26px;
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+    }
+
+    .second-ul ul {
+      padding: 20px 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: hsl(14, 45%, 36%);
+    }
+    .second-ul ul li div {
+      color: hsl(24, 5%, 18%);
+    }
+    .divider {
+      background-color: hsl(30, 18%, 87%);
+      height: 1px;
+      margin-top: 10px;
+    }
+
+    .third-ul {
+      margin: 30px 0;
+      color: hsl(14, 45%, 36%);
+    }
+
+    .third-ul p {
+      color: hsl(14, 45%, 36%);
+      font-size: 26px;
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+    }
+
+    .third-ul ol {
+      padding: 20px 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: hsl(14, 45%, 36%);
+      font-weight: 700;
+    }
+
+    .third-ul ol li div {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      color: hsl(24, 5%, 18%);
+    }
+
+    .fourth-ul {
+      margin-top: 30px;
+    }
+
+    .fourth-ul p {
+      color: hsl(14, 45%, 36%);
+      font-size: 26px;
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .items {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .flex div {
+      width: 50%;
+      margin-left: 30px;
+    }
+
+    .dividers {
+      background-color: hsl(30, 18%, 87%);
+      height: 1px;
+    }
+
+    .flex div:last-child {
+      color: hsl(14, 45%, 36%);
+      font-weight: 700;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media screen and (max-width: 720px) {
+      .item {
+        padding: 0;
+        margin: 0;
+        border-radius: unset;
+        width: unset;
+        padding-bottom: 30px;
+      }
+      .title {
+        font-size: 35px;
+        line-height: 35px;
+        padding: 0 30px;
+      }
+
+      .item p {
+        padding: 0 30px;
+      }
+      img {
+        border-radius: unset;
+      }
+
+      .first-ul {
+        margin: 0 30px;
+        margin-top: 30px;
+      }
+      .first-ul p {
+        margin-left: -30px;
+      }
+
+      .second-ul ul {
+        margin: 0 30px;
+      }
+      .divider {
+        margin: 30px;
+      }
+
+      .second-ul ul, .third-ul ol {
+        margin: 0 30px;
+      }
+
+      .fourth-ul .text {
+        margin: 0 30px;
+      }
+
+      .flex, .dividers {
+        margin: 0 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">
+      <img src="assets/images/image-omelette.jpeg" alt="image-omelette">
+      <p class="title">Simple Omelette Recipe</p>
+
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    
+      <div class="first-ul">
+        <p>Preparation time</p>
+        <ul>
+          <li><div><b>Total:</b> Approximately 10 minutes</div></li>
+          <li><div><b>Preparation:</b> 5 minutes</div></li>
+          <li><div><b>Cooking:</b> 5 minutes</div></li>
+        </ul>
+      </div>
+    
+      <div class="second-ul">
+        <p>Ingredients</p>
+        <ul>
+          <li><div>2-3 large eggs</div></li>
+          <li><div>Salt, to taste</div></li>
+          <li><div>Pepper, to taste</div></li>
+          <li><div>1 tablespoon of butter or oil</div></li>
+          <li><div>Optional fillings: cheese, diced vegetables, cooked meats, herbs</div></li>
+        </ul>
+        <div class="divider"></div>
+      </div>
+
+      <div class="third-ul">
+        <p>Instructions</p>
+    
+        <ol>
+          <li><div><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+            You can add a tablespoon of water or milk for a fluffier texture.</div></li>
+          <li><div><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</div></li>
+          <li><div><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+            the eggs evenly coat the surface.</div></li>
+          <li><div><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+            middle, sprinkle your chosen fillings over one half of the omelette.</div></li>
+          <li><div><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+            fillings. Let it cook for another minute, then slide it onto a plate.</div></li>
+          <li><div><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</div></li>
+        </ol>
+        <div class="divider"></div>
+      </div>
+      <div class="fourth-ul">
+        <p>Nutrition</p>
+        <div class="text">The table below shows nutritional values per serving without the additional fillings.</div>
+
+        <div class="items">
+          <div class="flex">
+            <div>Calories</div><div>277kcal</div>
+          </div>
+          <div class="dividers"></div>
+          <div class="flex">
+            <div>Carbs</div><div>0g</div>
+          </div>
+          <div class="dividers"></div>
+          <div class="flex">
+            <div>Protein</div><div>20g</div>
+          </div>
+          <div class="dividers"></div>
+          <div class="flex">
+            <div>Fat</div><div>22g</div>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hussain Ahmed</a>.
+  </div>
+</body>
+</html>
