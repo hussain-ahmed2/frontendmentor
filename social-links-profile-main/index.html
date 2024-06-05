@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .container {
+      height: 100vh;
+      display: grid;
+      place-content: center;
+      background-color: hsl(0, 0%, 8%);
+    }
+
+    .card {
+      width: 320px;
+      background-color: hsl(0, 0%, 12%);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .card-img {
+      width: 80px;
+      margin: 20px auto;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .address {
+      font-size: small;
+      font-weight: 600;
+      margin-top: 10px;
+      color: hsl(75, 94%, 57%);
+    }
+
+    .info {
+      margin: 30px 0 10px 0;
+      font-weight: 400;
+      color: hsl(0, 0%, 85%);
+    }
+
+    .social div {
+      background-color: hsl(0, 0%, 20%);
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      margin: 15px;
+      font-weight: 600;
+      border-radius: 7px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="assets/images/avatar-jessica.jpeg" alt="avatar-jessica" class="card-img">
+      <p class="name">Jessica Randall</p>
+      <p class="address">London, United Kingdom</p>
+      <p class="info">"Front-end developer and avid reader."</p>
+
+      <div class="social">
+        <div>GitHub</div>
+        <div>Frontend Mentor</div>
+        <div>LinkedIn</div>
+        <div>Twitter</div>
+        <div>Instagram</div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hussain Ahmed</a>.
+  </div>
+</body>
+
+</html>
