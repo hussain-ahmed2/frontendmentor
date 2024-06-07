@@ -67,6 +67,14 @@ body {
   gap: 10px;
 }
 
+* {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 600;
+}
+
 .vg{
   opacity: 50%;
 }
@@ -89,6 +97,11 @@ body {
 .r, .bl {
   box-shadow: 10px 15px 10px hsl(217, 19%, 35%, 0.05), 0 10px 7px hsl(210, 46%, 95%, 0.5);
 } 
+
+.text-white {
+  color: white;
+  opacity: 80%;
+}
 
 @media screen and (max-width: 768px) {
   .grid {
