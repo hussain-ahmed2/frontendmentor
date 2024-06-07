@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      color: hsl(234, 12%, 34%);
+      font-size: 15px;
+      background-color: hsl(0, 0%, 98%);
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0;
+      padding: 0 40px;
+    }
+
+    .one {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+   .one-a {
+      font-weight: 200;
+      font-size: 30px;
+      line-height: 25px;
+    }
+
+    .one-b {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 25px;
+    }
+
+    .one p {
+      margin-top: 20px;
+    }
+
+    .two {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .item {
+      max-width: 350px;
+      padding: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      background-color: white;
+      box-shadow: 0 8px 6px hsl(212, 86%, 64%, 0.1),0 15px 10px hsl(234, 12%, 34%, 0.1);
+    }
+
+    .item img {
+      float: right;
+      margin-top: 40px;
+    }
+
+    .item::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+    .item-a {
+      font-weight: 600;
+    }
+
+    .item-two {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .supervisor, .team-builder, .karma, .calculator {
+      height: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .supervisor {
+      background-color: hsl(180, 62%, 55%);
+    }
+
+    .team-builder {
+      background-color: hsl(0, 78%, 62%);
+    }
+
+    .karma {
+      background-color: hsl(34, 97%, 64%);
+    }
+
+    .calculator {
+      background-color: hsl(212, 86%, 64%);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width: 768px) {
+      .one-a, .one-b {
+        font-size: 24px;
+      }
+      .two {
+        flex-direction: column;
+      }
+
+      .item {
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .item img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="one">
+      <p class="one-a">Reliable, efficient delivery</p>
+      <p class="one-b">Powered by Technology</p>
+      <p>Our Artificial Intelligence powered tools use millions of project data points<br>to ensure that your project is
+        successful</p>
+    </div>
+    <div class="two">
+      <div class="item">
+        <div class="supervisor"></div>
+        <h3 class="item-a">Supervisor</h3>
+        <div class="item-b">Monitors activity to identify project roadblocks</div>
+        <img src="images/icon-supervisor.svg" alt="icon-supervisor">
+      </div>
+      <div class="item-two">
+        <div class="item">
+          <div class="team-builder"></div>
+          <h3 class="item-a">Team Builder</h3>
+          <div class="item-b">Scans our talent network to create the optimal team for your project</div>
+          <img src="images/icon-team-builder.svg" alt="icon-team-builder">
+        </div>
+        <div class="item">
+          <div class="karma"></div>
+          <h3 class="item-a">Karma</h3>
+          <div class="item-b">Regularly evaluates our talent to ensure quality</div>
+          <img src="images/icon-karma.svg" alt="icon-karma">
+        </div>
+      </div>
+      <div class="item">
+        <div class="calculator"></div>
+        <h3 class="item-a">Calculator</h3>
+        <div class="item-b">Uses data from past projects to provide better delivery estimates</div>
+        <img src="images/icon-calculator.svg" alt="icon-calculator">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Hussain Ahmed</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
