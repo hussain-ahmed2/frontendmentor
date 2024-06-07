@@ -97,7 +97,10 @@
     .item-two {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       gap: 30px;
+      
     }
 
     .supervisor, .team-builder, .karma, .calculator {
@@ -164,13 +167,13 @@
         successful</p>
     </div>
     <div class="two">
-      <div class="item">
+      <div class="item" style="flex-shrink: .85;">
         <div class="supervisor"></div>
         <h3 class="item-a">Supervisor</h3>
         <div class="item-b">Monitors activity to identify project roadblocks</div>
         <img src="images/icon-supervisor.svg" alt="icon-supervisor">
       </div>
-      <div class="item-two">
+      <div class="item-two" style="flex-shrink: .6;">
         <div class="item">
           <div class="team-builder"></div>
           <h3 class="item-a">Team Builder</h3>
@@ -184,7 +187,7 @@
           <img src="images/icon-karma.svg" alt="icon-karma">
         </div>
       </div>
-      <div class="item">
+      <div class="item" style="flex-shrink: 1.1;">
         <div class="calculator"></div>
         <h3 class="item-a">Calculator</h3>
         <div class="item-b">Uses data from past projects to provide better delivery estimates</div>
