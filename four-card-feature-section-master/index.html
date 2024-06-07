@@ -33,10 +33,8 @@
 
     .container {
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      place-content: center;
       margin: 50px 0;
       padding: 0 40px;
     }
@@ -46,7 +44,7 @@
       margin-bottom: 50px;
     }
 
-   .one-a {
+    .one-a {
       font-weight: 200;
       font-size: 30px;
       line-height: 25px;
@@ -63,10 +61,10 @@
     }
 
     .two {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
       align-items: center;
-      justify-content: center;
-      gap: 30px;
     }
 
     .item {
@@ -76,18 +74,7 @@
       overflow: hidden;
       position: relative;
       background-color: white;
-      box-shadow: 0 8px 6px hsl(212, 86%, 64%, 0.1),0 15px 10px hsl(234, 12%, 34%, 0.1);
-    }
-
-    .item img {
-      float: right;
-      margin-top: 40px;
-    }
-
-    .item::after {
-      content: '';
-      clear: both;
-      display: table;
+      box-shadow: 0 8px 6px hsl(212, 86%, 64%, 0.1), 0 15px 10px hsl(234, 12%, 34%, 0.1);
     }
 
     .item-a {
@@ -95,15 +82,30 @@
     }
 
     .item-two {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      display: grid;
       gap: 30px;
-      
     }
 
-    .supervisor, .team-builder, .karma, .calculator {
+    .two-item {
+      max-width: 350px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      background-color: white;
+      box-shadow: 0 8px 6px hsl(212, 86%, 64%, 0.1), 0 15px 10px hsl(234, 12%, 34%, 0.1);
+    }
+
+    img {
+      float: right;
+      margin-top: 40px;
+    }
+
+    .supervisor,
+    .team-builder,
+    .karma,
+    .calculator {
       height: 5px;
       position: absolute;
       top: 0;
@@ -137,17 +139,31 @@
     }
 
     @media screen and (max-width: 768px) {
-      .one-a, .one-b {
+
+      .one-a,
+      .one-b {
         font-size: 24px;
       }
+
       .two {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        width: 100%;
       }
 
       .item {
-        max-width: 100%;
+        max-width: 768px;
         width: 100%;
         padding: 20px;
+      }
+
+      .item-two {
+        width: 100%;
+      }
+
+      .two-item {
+        max-width: 768px;
+        width: 100%;
+        min-height: auto;
       }
 
       .item img {
@@ -167,27 +183,27 @@
         successful</p>
     </div>
     <div class="two">
-      <div class="item" style="flex-shrink: .85;">
+      <div class="item">
         <div class="supervisor"></div>
         <h3 class="item-a">Supervisor</h3>
         <div class="item-b">Monitors activity to identify project roadblocks</div>
         <img src="images/icon-supervisor.svg" alt="icon-supervisor">
       </div>
-      <div class="item-two" style="flex-shrink: .6;">
-        <div class="item">
+      <div class="item-two">
+        <div class="two-item">
           <div class="team-builder"></div>
           <h3 class="item-a">Team Builder</h3>
           <div class="item-b">Scans our talent network to create the optimal team for your project</div>
           <img src="images/icon-team-builder.svg" alt="icon-team-builder">
         </div>
-        <div class="item">
+        <div class="two-item">
           <div class="karma"></div>
           <h3 class="item-a">Karma</h3>
           <div class="item-b">Regularly evaluates our talent to ensure quality</div>
           <img src="images/icon-karma.svg" alt="icon-karma">
         </div>
       </div>
-      <div class="item" style="flex-shrink: 1.1;">
+      <div class="item">
         <div class="calculator"></div>
         <h3 class="item-a">Calculator</h3>
         <div class="item-b">Uses data from past projects to provide better delivery estimates</div>
