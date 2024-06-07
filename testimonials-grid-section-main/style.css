@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-auto-columns: minmax(auto, 250px);
+  grid-template-areas: 
+  'tl tl tm r'
+  'bl bm bm r'
+  ;
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+.tl {
+  grid-area: tl;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 81%);
+  background-image: url('images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position-x: 350px;
+}
+
+.tm {
+  grid-area: tm;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 81%);
+}
+
+.r {
+  grid-area: r;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.bl {
+  grid-area: bl;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.bm {
+  grid-area: bm;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+
+.tl, .tm, .r, .bl, .bm {
+  border-radius: 7px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vg{
+  opacity: 50%;
+}
+
+.review {
+  opacity: 70%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.r, .bl {
+  box-shadow: 10px 15px 10px hsl(217, 19%, 35%, 0.05), 0 10px 7px hsl(210, 46%, 95%, 0.5);
+} 
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'tl'
+    'tm'
+    'bl'
+    'bm'
+    'r'
+    ;
+  }
+}
