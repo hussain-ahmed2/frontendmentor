@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  color: hsl(214, 17%, 51%);
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 10px 7px hsl(212, 23%, 69%, 0.2),
+    7px 10px 7px hsl(212, 23%, 69%, 0.1);
+}
+
+.drawers {
+  max-width: 300px;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-info {
+  padding: 30px;
+}
+
+.card-info > p {
+  margin: 20px 0;
+}
+
+.avater {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avater-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avater-info img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.share-btn {
+  position: relative;
+  cursor: pointer;
+}
+.svg-btn {
+  background-color: hsl(210, 46%, 95%);
+  padding: 6.5px 7.5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.svg-btn:hover {
+  background-color: hsl(214, 17%, 51%);
+}
+
+.svg-btn:hover svg path {
+  fill: hsl(210, 46%, 95%);
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 7px;
+  position: absolute;
+  top: -80px;
+  left: -100px;
+  margin: 10px;
+  visibility: hidden;
+}
+
+.share::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.share p {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* mobile share */
+
+.mobile-share {
+  display: none;
+}
+
+.msvg-btn {
+  background-color: hsl(210, 46%, 95%);
+  padding: 6.5px 7.5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.msvg-btn:hover {
+  background-color: hsl(214, 17%, 51%);
+}
+
+.msvg-btn:hover svg path {
+  fill: hsl(210, 46%, 95%);
+}
+
+/* mobile share */
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card-info {
+    padding-bottom: 0;
+  }
+
+  .drawers {
+    border-radius: unset;
+    max-width: 768px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .avater {
+    display: none;
+  }
+
+  .mobile-share {
+    display: block;
+    width: 100%;
+    height: 70px;
+  }
+
+  .mobile-share-btn {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mobile-share-btn .text-spacing {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .mshare {
+    display: none;
+    align-items: center;
+    gap: 20px;
+  }
+}
