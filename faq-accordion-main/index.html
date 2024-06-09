@@ -157,13 +157,16 @@
   <script>
     const question = document.querySelectorAll('.question');
 
+    question[0].children[1].style.display = 'block';
+    question[0].children[0].children[0].src = 'assets/images/icon-minus.svg';
+
     question.forEach(q => {
       q.addEventListener('click', () => {
         
         if(q.children[1].style.display === ''){
           q.children[1].style.display = 'block';
           q.children[0].children[0].src = 'assets/images/icon-minus.svg';
-          
+
           question.forEach(h => { // simply remove this foreach loop for enabling multi-selection 
             if(h!==q){
               h.children[1].style.display = '';
