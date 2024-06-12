@@ -25,7 +25,7 @@ submitBtn.addEventListener("click", (e) => {
     error.style.visibility = "visible";
     input.style.backgroundColor = 'hsl(4, 100%, 67%, .2)';
     input.style.borderColor = 'hsl(4, 100%, 67%)';
-    input.classList.toggle('pct');
+    input.classList.add('pct');
     input.style.color = 'hsl(4, 100%, 67%)';
   }
 });
@@ -35,5 +35,5 @@ dismissBtn.addEventListener("click", (e) => {
   successContainer.style.display = "none";
   signupContainer.style.display = "grid";
   input.value = '';
-input.classList.toggle('pct');
+input.classList.remove('pct');
 });
