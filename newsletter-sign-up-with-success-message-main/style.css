@@ -125,7 +125,7 @@ img {
   max-width: 60px;
 }
 
-.success-card button:hover {
+button:hover {
   color: white;
   background: linear-gradient(90deg, hsl(4, 100%, 67%), hsl(4, 100%, 67%, .8));
   border-color: transparent;
