@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px 20px 100px 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  height: 150px;
+}
+
+#input-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: hsl(0, 1%, 44%);
+  font-size: small;
+}
+
+.inputs p {
+  font-style: italic;
+  font-size: small;
+}
+
+input {
+  width: 100%;
+  font-size: 1.25rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  padding: 10px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+.submit-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(0, 0%, 86%);
+}
+
+button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: calc(50% - 30px);
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+button img {
+  width: 50%;
+  margin: auto;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+#result span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    padding: 40px;
+  }
+
+  #result {
+    font-size: 4rem;
+  }
+
+  button {
+    position: absolute;
+    left: unset;
+    right: 0;
+  }
+}
