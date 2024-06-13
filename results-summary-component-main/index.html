@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/fonts/HankenGrotesk-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="assets/fonts/static/HankenGrotesk-Bold.ttf">
+  <link rel="stylesheet" href="assets/fonts/static/HankenGrotesk-ExtraBold.ttf">
+  <link rel="stylesheet" href="assets/fonts/static/HankenGrotesk-Medium.ttf">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="result">
+        <p>Your Result</p>
+        <div class="circle">
+          <p class="number">76</p>
+          <p>of 100</p>
+        </div>
+
+        <div class="result-bottom">
+          <p class="great">Great</p>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <p>Summary</p>
+
+        <ul>
+          <li>
+            <p class="item"><img src="assets/images/icon-reaction.svg" alt="icon-reaction"><span class="reaction">Reaction</span></p>
+            <p> <span class="bold">80 / <span class="opacity">100</span></span></p>
+          </li>
+          <li>
+            <p class="item"><img src="assets/images/icon-memory.svg" alt="icon-memory"><span class="memory">Memory</span></p>
+            <p><span class="bold">92 / <span class="opacity">100</span></span></p>
+          </li>
+          <li>
+            <p class="item"><img src="assets/images/icon-verbal.svg" alt="icon-verbal"><span class="verbal">Verbal</span></p>
+            <p><span class="bold">61 / <span class="opacity">100</span></span></p>
+          </li>
+          <li>
+            <p class="item"><img src="assets/images/icon-visual.svg" alt="icon-visual"><span class="visual">Visual</span></p>
+            <p><span class="bold">72 / <span class="opacity">100</span></span></p>
+          </li>
+        </ul>
+
+        <button>Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hussain Ahmed</a>.
+  </div>
+</body>
+
+</html>
