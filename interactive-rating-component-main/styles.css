@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:itak,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+p, li{
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating-container, .success-container {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.rating-card, .success-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  max-width: 400px;
+}
+
+.rating-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rating-card img {
+  width: 45px;
+  background-color: hsl(0, 0%, 100%, 0.05);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  height: 50px;
+  width: 50px;
+  background-color: hsl(0, 0%, 100%, 0.05);
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+li:hover {
+  color: hsl(216, 12%, 8%);
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+button {
+  padding: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(216, 12%, 8%);
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.success-container {
+  display: none;
+}
+
+.success-card {
+  align-items: center;
+  text-align: center;
+  padding: 40px 32px;
+}
+
+.success-card img {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.success-card .selected {
+  padding: 10px 15px;
+  background-color: hsl(0, 0%, 100%, 0.05);
+  border-radius: 50px;
+  color: hsl(25, 97%, 53%);
+}
+
+.toggle {
+  color: hsl(216, 12%, 8%);
+  background-color: white;
+}
+
+#custom-alert {
+  background-color: hsl(0, 100%, 90%);
+  color: hsl(216, 12%, 8%);
+  padding-left: 20px;
+  transition: all 0.3s linear;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.dismiss {
+  background-color: unset;
+  font-size: 20px;
+  padding: 15px;
+  margin-left: 10px;
+  border-radius: 0;
+  border-left: 1px solid hsl(0, 100%, 70%);
+}
+
+.dismiss:hover {
+  background-color: hsl(120, 100%, 98%);
+}
