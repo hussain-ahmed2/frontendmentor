@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  background-color: hsl(225, 100%, 94%);
+  color: hsl(223, 47%, 23%);
+}
+
+main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 7px 10px hsl(245, 75%, 52%, .1), 0 14px 30px hsl(245, 75%, 52%, .05);
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px;
+}
+
+.info > p {
+  color: hsl(224, 23%, 55%);
+}
+
+h2 {
+  font-weight: 900;
+}
+
+.music-plan {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+.music-plan-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.annual-plan p:nth-child(1) {
+  font-weight: 900;
+}
+
+.annual-plan p:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+}
+
+a {
+  color: hsl(245, 75%, 52%);
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.cancel-order {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-order:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+button {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 20px 15px hsl(225, 100%, 94%), 0 10px 15px hsl(225, 100%, 94%);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
