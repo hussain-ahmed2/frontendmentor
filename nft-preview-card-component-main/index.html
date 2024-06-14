@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="fonts/outfit/Outfit-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="fonts/outfit/static/Outfit-Black.ttf">
+  <link rel="stylesheet" href="fonts/outfit/static/Outfit-Bold.ttf">
+  <link rel="stylesheet" href="fonts/outfit/static/Outfit-ExtraBold.ttf">
+  <link rel="stylesheet" href="fonts/outfit/static/Outfit-ExtraLight.ttf">
+  <link rel="stylesheet" href="fonts/outfit/static/Outfit-Light.ttf">
+  <link rel="stylesheet" href="fonts/outfit/static/Outfit-Medium.ttf">
+  <link rel="stylesheet" href="fonts/outfit/static/Outfit-Regular.ttf">
+  <link rel="stylesheet" href="fonts/outfit/static/Outfit-SemiBold.ttf">
+  <link rel="stylesheet" href="fonts/outfit/static/Outfit-Thin.ttf">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container" aria-label="main-container">
+    <div class="card" aria-label="card-component">
+      <div class="bg-image">
+        <img class="main" src="images/image-equilibrium.jpg" alt="image-equilibrium">
+        <img src="images/icon-view.svg" alt="icon-view" class="hover-img">
+      </div>
+      <div class="info" aria-label="card-information">
+        <h2>Equilibrium #3429</h2>
+
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+
+        <div class="flex balance" aria-label="balance">
+          <p><img src="images/icon-ethereum.svg" alt="icon-ethereum">0.041 ETH</p>
+          <p><img src="images/icon-clock.svg" alt="icon-clock">3 days left</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="flex" aria-label="author-information">
+          <img src="images/image-avatar.png" alt="image-avatar">
+          <p><span class="opacity">Creation of</span> <span class="pointer">Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hussain Ahmed</a>.
+  </div>
+</body>
+
+</html>

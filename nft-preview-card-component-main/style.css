@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+
+.container {
+  background-color: hsl(217, 54%, 11%);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color:  hsl(216, 50%, 16%);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bg-image img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main {
+  z-index: 2;
+}
+
+.bg-image {
+  position: relative;
+}
+
+.hover-img {
+  position: absolute;
+  top: 0;
+  display: grid;
+  place-content: center;
+  padding: 40%;
+  opacity: 0;
+}
+
+.hover-img:hover {
+  opacity: 1;
+  background-color: hsl(178, 100%, 50%, .5);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info > p {
+  color: hsl(215, 51%, 70%);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+p {
+  font-weight: 300;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.divider {
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex > img {
+  width: 50px;
+  margin-right: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.balance {
+  justify-content: space-between;
+}
+
+.balance p:nth-child(1){
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.opacity {
+  color: hsl(215, 51%, 70%);
+}
+
+.balance p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.balance p:nth-child(2){
+  color: hsl(215, 51%, 70%);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    padding: 30px;
+  }
+}
