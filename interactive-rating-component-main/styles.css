@@ -28,7 +28,7 @@ p, li{
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background-color: hsl(213, 19%, 18%);
+  background: linear-gradient(hsl(213, 19%, 18%), hsla(213, 19%, 18%, 0.3));
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
@@ -140,4 +140,10 @@ button:hover {
 
 .dismiss:hover {
   background-color: hsl(120, 100%, 98%);
+}
+
+@media screen and (min-width: 768px){
+  .rating-card, .success-card {
+    padding: 30px;
+  }
 }
