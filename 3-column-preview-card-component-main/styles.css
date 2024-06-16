@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 25px;
+}
+
+.heading {
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 300px));
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 45px;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card img {
+  width: 65px;
+}
+
+.card .heading {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.card:nth-child(1){
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card:nth-child(2){
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3){
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  padding: 14px 26px;
+  border-radius: 32px;
+  width: fit-content;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn1{
+  color: hsl(31, 77%, 52%);
+}
+
+.btn2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn3 {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, auto);
+    padding: 20px;
+  }
+
+  .card {
+    gap: 30px;
+  }
+
+  .card:nth-child(1) {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .card:nth-child(3) {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+}
