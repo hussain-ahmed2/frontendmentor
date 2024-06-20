@@ -50,10 +50,12 @@ submitBtn.addEventListener('click', (e) => {
     emailWarningText.textContent = 'Looks like this is not an email';
     emailField.style.border = '2px solid hsl(0, 100%, 74%)';
     emailErrIcon.style.display = 'block';
+    emailField.style.color = 'hsl(0, 100%, 74%)';
   }else{
     emailWarningText.textContent = '';
     emailField.style.border = '1px solid hsl(246, 25%, 77%)';
     emailErrIcon.style.display = 'none';
+    emailField.style.color = 'hsl(249, 10%, 26%)';
     isValidEmail = true;
   }
 
