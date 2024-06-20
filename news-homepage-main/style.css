@@ -182,7 +182,7 @@ p {
   color: hsl(5, 85%, 63%);
 }
 
-.bottom-card:hover div h3 {
+.bottom-card:hover div h2 {
   color: hsl(5, 85%, 63%);
   cursor: pointer;
 }
@@ -192,9 +192,8 @@ p {
   height: 100%;
 }
 
-.bottom-card div h3 {
+.bottom-card div h2 {
   font-weight: 700;
-  font-size: 18px;
 }
 
 .mobile-nav {
