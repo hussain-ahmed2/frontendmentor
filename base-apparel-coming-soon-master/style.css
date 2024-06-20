@@ -67,12 +67,14 @@ form {
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .error {
   display: none;
   position: absolute;
   right: 100px;
+  width: 20px;
 }
 
 .err-text {
