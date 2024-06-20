@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 400;
+  background-color: hsl(36, 100%, 99%);
+  color: hsl(240, 100%, 5%);
+  padding: 20px;
+}
+
+header {
+  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+
+ul li a:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+
+#menu-btn {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 20px 0;
+  padding-top: 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+picture {
+  min-height: 50%;
+}
+
+picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.left-info h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.left-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-info div button {
+  width: fit-content;
+  padding: 15px 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.left-info div button:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  padding: 20px;
+}
+
+.right div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.right div div:hover h3 {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+
+.right h1 {
+  color: hsl(35, 77%, 62%);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.right div p {
+  color: hsl(233, 8%, 79%);
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(236, 13%, 42%);
+}
+
+p {
+  line-height: 24px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.bottom-card {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom-card div h1 {
+  font-size: 30px;
+  color: hsl(5, 85%, 63%);
+}
+
+.bottom-card:hover div h3 {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+.bottom-card img {
+  width: 30%;
+  height: 100%;
+}
+
+.bottom-card div h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  width: 70%;
+  background-color: white;
+  height: 100%;
+  margin-left: auto;
+  padding: 20px;
+  padding-top: 150px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#menu-close-btn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+  .top {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    margin-bottom: 40px;
+  }
+
+  .left-info {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  main {
+    margin-bottom: 50px;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  #menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+}
