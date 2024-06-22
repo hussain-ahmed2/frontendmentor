@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: hsl(209, 33%, 12%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+section {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dashboard {
+  width: 100%;
+}
+
+img {
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.light {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+p {
+  padding: 15px;
+}
+
+form {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 30px 0;
+  position: relative;
+}
+
+input {
+  font-size: 1.15rem;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+input[type=email] {
+  width: 100%;
+  border: 1px solid hsl(223, 100%, 88%);
+  padding: 15px 30px;
+}
+
+input[type=submit] {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.err-text {
+  position: absolute;
+  left: 15px;
+  bottom: -10px;
+  font-size: medium;
+  font-style: italic;
+  color: hsl(354, 100%, 66%);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.icons i {
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  color: hsl(223, 87%, 63%);
+}
+
+.icons i:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+}
+
+.copy {
+  font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .err-text {
+    position: unset;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  .logo {
+    width: 60px;
+  }
+
+  input{
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
