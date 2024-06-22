@@ -86,6 +86,10 @@ input::placeholder {
   color: hsla(0, 0%, 59%, 0.5);
 }
 
+input:focus {
+  border-color: hsl(223, 87%, 63%);
+}
+
 .err-text {
   position: absolute;
   left: 15px;
